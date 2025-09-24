@@ -1,0 +1,84 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ID'
+annotate view ZC_CIUDADES_77 with
+{
+  @EndUserText.label: 'ID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'ID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'ID'
+  } ]
+
+  ID;
+  
+  @EndUserText.label: 'Ciudad'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Ciudad'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Ciudad'
+  } ]
+
+  Ciudad;
+  
+  @EndUserText.label: 'Pais'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Pais'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Pais'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  IdPais;
+  
+  @UI.identification: [ {
+    position: 40 
+  } ]
+
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 50 
+  } ]
+
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+
+  LastChangedAt;
+  
+
+}

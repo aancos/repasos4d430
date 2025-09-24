@@ -1,0 +1,126 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ID'
+annotate view ZC_ASISTENTES_77 with
+{
+  @EndUserText.label: 'ID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'ID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'ID'
+  } ]
+
+  ID;
+  
+  @EndUserText.label: 'Nombre'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Nombre'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Nombre'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Nombre;
+  
+  @EndUserText.label: 'Apellidos'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Apellidos'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Apellidos'
+  } ]
+
+  Apellidos;
+  
+    @EndUserText.label: 'Tipo'
+  @UI.identification: [ {
+    position: 35 , 
+    label: 'Tipo'
+  } ]
+  @UI.lineItem: [ {
+    position: 35 , 
+    label: 'Tipo'
+  } ]
+  @UI.selectionField: [ {
+    position: 35 
+  } ]
+  Tipo;
+  
+  @EndUserText.label: 'Edad'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Edad'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Edad'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Edad;
+  
+  @EndUserText.label: 'Ciudad'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Ciudad'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Ciudad'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  IdCiudad;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+
+  LastChangedAt;
+  
+
+}

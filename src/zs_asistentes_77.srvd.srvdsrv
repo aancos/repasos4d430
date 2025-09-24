@@ -1,0 +1,4 @@
+@EndUserText.label: 'Asistentes'
+define service ZS_ASISTENTES_77 {
+  expose ZC_ASISTENTES_77;
+}

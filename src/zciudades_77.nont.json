@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZCIUDADES_77",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZCIUDADES_77",
+  "sapObjectType": "ZCIUDADES_77",
+  "rootNode": true
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_ASISTENTES_77'
+@MappingRole: true
+define role ZR_ASISTENTES_77 {
+  grant select on ZR_ASISTENTES_77
+  where ( tipo = 'A' );
+}

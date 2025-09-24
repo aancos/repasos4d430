@@ -1,0 +1,4 @@
+@EndUserText.label: 'Ciudades'
+define service ZS_CIUDADES_77 {
+  expose ZC_CIUDADES_77;
+}
