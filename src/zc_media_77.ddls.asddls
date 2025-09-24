@@ -4,7 +4,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Media'
 @Metadata.ignorePropagatedAnnotations: true
-define view ZC_MEDIA_77 as select distinct  from ZR_ASISTENTES_77
+define view ZC_MEDIA_77 as select   from ZR_ASISTENTES_77
 {
     IdCiudad,
     avg(Edad as abap.dec(11,1)) as PromedioEdad

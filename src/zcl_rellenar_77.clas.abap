@@ -71,38 +71,43 @@ CLASS zcl_rellenar_77 IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
     DATA lv_success TYPE abap_bool.
 
+   delete from zasistentes_77.
+   delete from zciudades_77.
 
 *   Antonio
     lv_success = insert_asistente(      iv_id = '99'     iv_nombre = 'Antonio'      iv_apellidos = 'de Ancos'      iv_edad = 53      iv_id_ciudad = 'MAD'    ).
 
-*    lv_success = insert_asistente( iv_id = '88' iv_nombre = 'Pepe'          iv_apellidos = 'Soler'                  iv_edad = 60     iv_id_ciudad = 'ELC'   ).
-*    lv_success = delete_asistente( iv_id = '88' iv_nombre = 'Pepe'          iv_apellidos = 'Soler'                  iv_edad = 60     iv_id_ciudad = 'ELC'   ).
+    lv_success = insert_asistente( iv_id = '88' iv_nombre = 'Pepe'          iv_apellidos = 'Soler'                  iv_edad = 60     iv_id_ciudad = 'PAM'   ).
+*    lv_success = delete_asistente( iv_id = '88' iv_nombre = 'Pepe'          iv_apellidos = 'Soler'                  iv_edad = 60     iv_id_ciudad = 'PAM'   ).
 
 *   Asistentes
-    lv_success = insert_asistente( iv_id = '01' iv_nombre = 'Aitziber'      iv_apellidos = 'San Martín Mintiaga'    iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '02' iv_nombre = 'Aitziber'      iv_apellidos = 'Aurtenetxe Sanchez'     iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '03' iv_nombre = 'Ana Begoña'    iv_apellidos = 'Irabien Bidaurre'       iv_edad = 22 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '04' iv_nombre = 'David'         iv_apellidos = 'Serrano Zazo'           iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '05' iv_nombre = 'David'         iv_apellidos = 'Colina'                 iv_edad = 30 iv_id_ciudad = 'MAD' ).
-    lv_success = insert_asistente( iv_id = '06' iv_nombre = 'Adolfo'        iv_apellidos = 'López'                  iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '07' iv_nombre = 'Estibaliz'     iv_apellidos = 'Castresana'             iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '08' iv_nombre = 'Flor'          iv_apellidos = 'Egido Arroyo'           iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '09' iv_nombre = 'Iraia'         iv_apellidos = 'Rábanos Beldarrain'     iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '10' iv_nombre = 'Iñigo'         iv_apellidos = 'Bilbao'                 iv_edad = 31 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '11' iv_nombre = 'Iñigo'         iv_apellidos = 'Zubillaga Solano'       iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '12' iv_nombre = 'Javier'        iv_apellidos = 'Gutierrez Tellitu'      iv_edad = 33 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '13' iv_nombre = 'Eztizen'       iv_apellidos = 'Garay'                  iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '14' iv_nombre = 'Jose Juan'     iv_apellidos = 'Hernandez Domingo'      iv_edad = 88 iv_id_ciudad = 'MAD' ).
-    lv_success = insert_asistente( iv_id = '15' iv_nombre = 'Laura'         iv_apellidos = 'Clavel'                 iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '16' iv_nombre = 'Leire'         iv_apellidos = 'Moreno Alsasua'         iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '17' iv_nombre = 'Maria Eugenia' iv_apellidos = 'Castresana Garcia'      iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '19' iv_nombre = 'Ramon'         iv_apellidos = 'Alcibar Apraiz'         iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '20' iv_nombre = 'Ramiro'        iv_apellidos = 'Marín'                  iv_edad = 36 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '21' iv_nombre = 'Raul'          iv_apellidos = 'Pardo Zubiaur'          iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '22' iv_nombre = 'Rodrigo'       iv_apellidos = 'Rodriguez Blanco'       iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '23' iv_nombre = 'Soiartze'      iv_apellidos = 'Tomé'                   iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '24' iv_nombre = 'Virginia'      iv_apellidos = 'Ruiz Diego'             iv_edad = 30 iv_id_ciudad = 'BIL' ).
-    lv_success = insert_asistente( iv_id = '25' iv_nombre = 'Xabier'        iv_apellidos = 'Aretxabaleta'           iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '01' iv_nombre = 'Asier'          iv_apellidos = 'Villelabeitia Eguia'        iv_edad = 22 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '02' iv_nombre = 'Amaia'          iv_apellidos = 'Bilbao Aguirre'             iv_edad = 31 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '03' iv_nombre = 'Arancha'        iv_apellidos = 'Ríos'                        iv_edad = 20 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '04' iv_nombre = 'Naiara'         iv_apellidos = 'Espinosa'                    iv_edad = 23 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '05' iv_nombre = 'Asier'          iv_apellidos = 'Benito'                      iv_edad = 31 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '06' iv_nombre = 'Begoña'         iv_apellidos = 'Cajigas Acinal'              iv_edad = 35 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '07' iv_nombre = 'Borja'          iv_apellidos = 'Berrojalbiz Aldamiz-Etxebarria' iv_edad = 22 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '08' iv_nombre = 'Carlos'         iv_apellidos = 'Herrero Rodriguez'           iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '09' iv_nombre = 'Francisco Javier' iv_apellidos = 'Lopez'                    iv_edad = 40 iv_id_ciudad = 'MAD' ).
+    lv_success = insert_asistente( iv_id = '10' iv_nombre = 'Igor'           iv_apellidos = 'Centeno Maeso'               iv_edad = 32 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '11' iv_nombre = 'Inigo'          iv_apellidos = 'Diaz de Sarralde'            iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '12' iv_nombre = 'Iñaki'          iv_apellidos = 'Arregui Bilbao'              iv_edad = 34 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '13' iv_nombre = 'Manuel'         iv_apellidos = 'Montero'                     iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '14' iv_nombre = 'Maria'          iv_apellidos = 'Fernandez Rincon'            iv_edad = 25 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '15' iv_nombre = 'Mariano'        iv_apellidos = 'De la fuente'                iv_edad = 30 iv_id_ciudad = 'MAD' ).
+    lv_success = insert_asistente( iv_id = '16' iv_nombre = 'Marta'          iv_apellidos = 'Deheso Corcuera'             iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '17' iv_nombre = 'Nora'           iv_apellidos = 'Miguelez Velasco'            iv_edad = 31 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '19' iv_nombre = 'Pablo'          iv_apellidos = 'Tejado Garcia'               iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '20' iv_nombre = 'Pablo'          iv_apellidos = 'Vizuete Benitez'             iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '21' iv_nombre = 'Rafael'         iv_apellidos = 'Mayo Dominguez'              iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '22' iv_nombre = 'Gonzalo'        iv_apellidos = 'García'                      iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '23' iv_nombre = 'María'          iv_apellidos = 'Bermejo'                     iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '24' iv_nombre = 'Yolanda'        iv_apellidos = 'Gonzalez Gallego'            iv_edad = 30 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '25' iv_nombre = 'Armando'        iv_apellidos = 'Abiega Castresana'           iv_edad = 18 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '26' iv_nombre = 'Oihane'         iv_apellidos = 'Arzuaga Lekue'               iv_edad = 27 iv_id_ciudad = 'BIL' ).
+    lv_success = insert_asistente( iv_id = '27' iv_nombre = 'Jon'            iv_apellidos = 'Urrutia'                     iv_edad = 30 iv_id_ciudad = 'BIL' ).
+
 
 *   Ciudades
     lv_success = insert_ciudad( iv_id = 'MAD' iv_ciudad = 'Madrid'      iv_pais = 'ESP' ).

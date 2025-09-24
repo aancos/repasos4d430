@@ -4,6 +4,7 @@
 @EndUserText.label: 'Asistentes'
 define root view entity ZR_ASISTENTES_77
   as select from zasistentes_77
+  association [0..1] to ZR_CIUDADES_77 as _Ciudad on $projection.IdCiudad = _Ciudad.ID
 {
   key id as ID,
   nombre as Nombre,
@@ -25,5 +26,6 @@ define root view entity ZR_ASISTENTES_77
   @Semantics.systemDateTime.localInstanceLastChangedAt: true
   local_last_changed_at as LocalLastChangedAt,
   @Semantics.systemDateTime.lastChangedAt: true
-  last_changed_at as LastChangedAt
+  last_changed_at as LastChangedAt,
+  _Ciudad
 }
