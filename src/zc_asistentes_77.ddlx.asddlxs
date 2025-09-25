@@ -12,7 +12,23 @@ annotate view ZC_ASISTENTES_77 with
     purpose: #STANDARD, 
     position: 10 , 
     type: #IDENTIFICATION_REFERENCE
-  } ]
+  },
+ {
+    label: 'Gafas y Género', 
+    id: 'GafasGenero', 
+    purpose: #STANDARD, 
+    position: 50 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ,
+ {
+    label: 'Campos Gestión', 
+    id: 'Gestion', 
+    purpose: #STANDARD, 
+    position: 130 , 
+    type: #IDENTIFICATION_REFERENCE
+  } 
+   ]
+
   @UI.identification: [ {
     position: 10 , 
     label: 'ID'
@@ -85,42 +101,53 @@ annotate view ZC_ASISTENTES_77 with
   } ]
   @UI.lineItem: [ {
     position: 50 , 
-    label: 'Ciudad'
+    label: 'Ciudad',
+  type: #WITH_INTENT_BASED_NAVIGATION,
+  semanticObject:  'Ciudad'
   } ]
   @UI.selectionField: [ {
     position: 50 
   } ]
+ 
+  
   IdCiudad;
   
   @UI.identification: [ {
     position: 60 
   } ]
 
-  CreatedBy;
+  createdby;
   
   @UI.identification: [ {
     position: 70 
   } ]
 
-  CreatedAt;
+  createdat;
   
   @UI.identification: [ {
     position: 80 
   } ]
 
-  LocalLastChangedBy;
+  locallastchangedby;
   
   @UI.identification: [ {
     position: 90 
   } ]
 
-  LocalLastChangedAt;
+  locallastchangedat;
   
   @UI.identification: [ {
     position: 100 
   } ]
 
-  LastChangedAt;
+  lastchangedat;
   
+    @UI.identification: [ {
+    position: 110 , 
+    label: 'Gafas y Género'
+  } ]
+  Gafas;
+  
+
 
 }

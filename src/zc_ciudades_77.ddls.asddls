@@ -10,7 +10,7 @@
 define root view entity ZC_CIUDADES_77
   provider contract transactional_query
   as projection on ZR_CIUDADES_77
-  association [1..1] to ZR_CIUDADES_77 as _BaseEntity on $projection.ID = _BaseEntity.ID
+  association [1..1] to ZC_CIUDADES_77 as _BaseEntity on $projection.ID = _BaseEntity.ID
   association [0..*] to ZC_ASISTENTES_77 as _Asistentes on $projection.ID = _Asistentes.IdCiudad
 {
   key ID,
@@ -36,6 +36,6 @@ define root view entity ZC_CIUDADES_77
 //    systemDateTime.lastChangedAt: true
 //  }
 //  LastChangedAt,
-//  _BaseEntity,
+  _BaseEntity,
   _Asistentes
 }

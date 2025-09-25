@@ -1,10 +1,11 @@
-@AccessControl.authorizationCheck: #NOT_ALLOWED
+@AccessControl.authorizationCheck: #NOT_REQUIRED
 @Metadata.allowExtensions: true
 @ObjectModel.sapObjectNodeType.name: 'ZASISTENTES_77'
 @EndUserText.label: 'Asistentes'
 define root view entity ZR_ASISTENTES_77
   as select from zasistentes_77
   association [0..1] to ZR_CIUDADES_77 as _Ciudad on $projection.IdCiudad = _Ciudad.ID
+  association [1..1] to ZR_ASISTENTES_77 as _BaseEntity on $projection.ID = _BaseEntity.ID
 {
   key id as ID,
   nombre as Nombre,
@@ -16,6 +17,8 @@ define root view entity ZR_ASISTENTES_77
   end as Tipo,
   
   edad as Edad,
+  zzgafas_ext as Gafas,
+  zzgenero_ext as Genero,
   id_ciudad as IdCiudad,
   @Semantics.user.createdBy: true
   created_by as CreatedBy,
@@ -27,5 +30,6 @@ define root view entity ZR_ASISTENTES_77
   local_last_changed_at as LocalLastChangedAt,
   @Semantics.systemDateTime.lastChangedAt: true
   last_changed_at as LastChangedAt,
-  _Ciudad
+  _Ciudad,
+  _BaseEntity
 }
